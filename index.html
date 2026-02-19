@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>typo.love</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Fragment+Mono&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      background-color: #fff;
+      color: #000;
+      font-family: 'Instrument Serif', 'Times New Roman', serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 40px 24px;
+    }
+
+    .container {
+      max-width: 600px;
+      width: 100%;
+      text-align: center;
+      animation: appear 0.4s cubic-bezier(0.34, 1.26, 0.64, 1) both;
+    }
+
+    @keyframes appear {
+      from {
+        opacity: 0;
+        transform: translateY(12px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .wordmark {
+      font-family: 'Instrument Serif', serif;
+      font-style: italic;
+      font-size: clamp(2rem, 8vw, 3.5rem);
+      letter-spacing: -0.01em;
+      margin-bottom: 32px;
+      line-height: 1;
+    }
+
+    .body-text {
+      font-family: 'Fragment Mono', monospace;
+      font-size: 13px;
+      line-height: 1.8;
+      color: #000;
+      margin-bottom: 28px;
+    }
+
+    .link {
+      color: #0099ff;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 1px;
+      transition: opacity 0.15s ease;
+      cursor: pointer;
+    }
+
+    .link:hover {
+      opacity: 0.7;
+    }
+
+    .divider {
+      width: 40px;
+      height: 1px;
+      background: #000;
+      margin: 32px auto;
+      opacity: 0.15;
+    }
+
+    .footer-text {
+      font-family: 'Fragment Mono', monospace;
+      font-size: 11px;
+      color: #000;
+      opacity: 0.35;
+      letter-spacing: 0.04em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="wordmark">typo.love</div>
+    <p class="body-text">
+      hi ! this project is temporarily moved to<br />
+      <a class="link" href="https://typolove.framer.website/">typolove.framer.website</a><br />
+      <br />
+      hope to be back on this link soon in spring 2026<br />
+      with an updated version :) — @lychkel &lt;3
+    </p>
+    <div class="divider"></div>
+    <p class="footer-text">a digital library of lost love letters</p>
+  </div>
+</body>
+</html>
